@@ -1,0 +1,54 @@
+{
+    "name": "VRInputActions",
+    "maps": [
+        {
+            "name": "RightController",
+            "id": "ee3225c2-019d-473d-8fbd-72c0fde414d1",
+            "actions": [
+                {
+                    "name": "RightPrimaryButton",
+                    "type": "Button",
+                    "id": "7793dd44-2fe8-4f5c-948a-4d8526e88c8e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightSecondaryButton",
+                    "type": "Button",
+                    "id": "83168278-9b4c-4a5b-b956-5435add9a825",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0456d065-e8bd-4ffc-8d40-2e752024c0a0",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightPrimaryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "03818dcc-78c1-47f0-82a4-8cb94b8a0222",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightSecondaryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
