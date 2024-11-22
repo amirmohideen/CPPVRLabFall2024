@@ -19,11 +19,9 @@ public class ControllerInputs : MonoBehaviour
 
         // Assign callbacks for the right controller's primary button
         controls.RightController.RightPrimaryButton.performed += ctx => OnRightPrimaryButtonPressed();
-        controls.RightController.RightPrimaryButton.canceled += ctx => OnRightPrimaryButtonReleased();
 
         // Assign callbacks for the right controller's secondary button
         controls.RightController.RightSecondaryButton.performed += ctx => OnRightSecondaryButtonPressed();
-        controls.RightController.RightSecondaryButton.canceled += ctx => OnRightSecondaryButtonReleased();
     }
 
     private void OnEnable()
@@ -41,14 +39,8 @@ public class ControllerInputs : MonoBehaviour
     // Callback for when the primary button on the right controller is pressed
     private void OnRightPrimaryButtonPressed() => increaseIndex();
 
-    // Callback for when the primary button on the right controller is released
-    private void OnRightPrimaryButtonReleased() => Debug.Log("Right Primary Button Released");
-
     // Callback for when the secondary button on the right controller is pressed
     private void OnRightSecondaryButtonPressed() => decreaseIndex();
-
-    // Callback for when the secondary button on the right controller is released
-    private void OnRightSecondaryButtonReleased() => Debug.Log("Right Secondary Button Pressed");
 
     // Increments the index to point to the next skybox material and updates the skybox
     void increaseIndex()
