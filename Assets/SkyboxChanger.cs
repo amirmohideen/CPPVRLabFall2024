@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class ControllerInputs : MonoBehaviour
+public class SkyboxChanger : MonoBehaviour
 {
     // Reference to the Input Action Asset, which contains the input bindings for the VR controller
     private VRInputActions controls;
